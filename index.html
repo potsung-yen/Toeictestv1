@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>多益單字冒險王 - TOEIC Spelling Hero</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🎮 多益單字冒險王</h1>
+        <p class="subtitle">背單字也能像打怪一樣刺激！</p>
+
+        <!-- 玩家設定區 -->
+        <div class="card" id="setupArea">
+            <div class="input-group">
+                <label for="playerName">玩家名稱：</label>
+                <input type="text" id="playerName" value="冒險王" placeholder="輸入你的名字">
+            </div>
+
+            <div class="input-group">
+                <label>選擇題庫範圍：</label>
+                <select id="groupSelect" onchange="handleGroupChange()" style="padding: 5px; font-size: 16px;">
+                    <option value="all">全部單字</option>
+                    <option value="group1">第 1~10 題</option>
+                    <option value="group2">第 11~20 題</option>
+                    <option value="group3">第 21~30 題</option>
+                    <option value="custom">自訂範圍...</option>
+                </select>
+            </div>
+
+            <div class="input-group" id="customRangeArea" style="display: none;">
+                <label>從第</label> <input type="number" id="startIdx" value="1" min="1" style="width: 60px;"> 
+                <label>到第</label> <input type="number" id="endIdx" value="10" min="1" style="width: 60px;"> <label>題</label>
+            </div>
+
+            <div class="input-group">
+                <label>遊戲模式：</label>
+                <label><input type="radio" name="gameMode" value="spelling" checked> 拼字模式</label>
+                <label style="margin-left: 15px;"><input type="radio" name="gameMode" value="choice"> 選擇題模式</label>
+            </div>
+
+            <div style="margin-top: 15px; display: flex; gap: 10px; flex-wrap: wrap; justify-content: center;">
+                <button type="button" class="btn-primary" onclick="startGame()">🚀 開始測試</button>
+                <button type="button" class="btn-secondary" onclick="openWordSelector()">📋 自訂勾選單字</button>
+                <button type="button" class="btn-danger" onclick="exportMistakes()">📥 下載常錯單字 (CSV)</button>
+                <button type="button" class="btn-success" onclick="openPromptModal()">🤖 產生 AI 擴充提示詞</button>
+            </div>
+            
+            <button type="button" class="btn-boss" id="bossBtn" style="display:none; margin-top: 10px; width: 100%;" onclick="startBossBattle()">👿 挑戰魔王 (僅測試錯題)</button>
+        </div>
+
+        <!-- 進度條 -->
+        <div id="progressContainer" style="display: none; width: 100%; background: #dfe6e9; border-radius: 10px; margin: 15px 0; height: 15px;">
+            <div id="progressBar" style="width: 0%; height: 100%; background: #00b894; border-radius: 10px; transition: width 0.3s;"></div>
+        </div>
+        <p id="progressText" style="display: none; font-size: 14px; color: #636e72; margin-top: 5px;">進度: 0 / 0</p>
+
+        <!-- 遊戲主畫面 -->
+        <div id="gameArea" class="card" style="display: none;">
+            <div class="score-board">
+                <span>⭐ 得分：<b id="score">0</b></span>
+                <button type="button" onclick="speakWord()" class="btn-small">🔊 發音</button>
+                <button type="button" onclick="showWordInfo()" class="btn-small" style="background-color: #8e44ad;">💡 深度解析</button>
+            </div>
+
+            <div class="question-box">
+                <h2 id="chineseHint" style="color: #2c3e50; margin-bottom: 5px;">中文提示</h2>
+                <p id="sentenceHint" style="color: #7f8c8d; font-style: italic; margin-top: 5px; min-height: 24px;"></p>
+            </div>
+
+            <div id="spellingArea" class="input-group">
+                <input type="text" id="englishInput" placeholder="輸入英文單字..." autocomplete="off" autocapitalize="none">
+                <button type="button" class="btn-primary" id="submitBtn" onclick="checkAnswer()">送出</button>
+            </div>
+
+            <div id="choiceArea" class="choice-container" style="display: none; gap: 10px; flex-wrap: wrap; justify-content: center;"></div>
+
+            <div id="feedbackMsg" class="feedback"></div>
+
+            <div style="margin-top: 15px; display: flex; align-items: center; justify-content: space-between;">
+                <label><input type="checkbox" id="autoNext" checked> 答對自動下一題</label>
+                <button type="button" class="btn-secondary" id="nextBtn" style="display: none;" onclick="nextQuestion()">下一題 ➔</button>
+            </div>
+        </div>
+
+        <!-- 字典與擴充區 -->
+        <div class="card">
+            <h3>📖 單字隨查與擴充</h3>
+            <div class="input-group" style="display: flex; gap: 10px;">
+                <input type="text" id="searchInput" placeholder="搜尋英文或中文..." style="flex-grow: 1;">
+                <button type="button" class="btn-primary" onclick="searchWord()">🔍 搜尋</button>
+            </div>
+            <div id="searchResultArea" style="display: none; margin-top: 15px; text-align: left;"></div>
+            
+            <hr style="margin: 20px 0; border: 0; border-top: 1px solid #dfe6e9;">
+            
+            <label for="csvFile" style="font-weight: bold; color: #2d3436;">📂 匯入 CSV 自訂單字庫：</label>
+            <input type="file" id="csvFile" accept=".csv" onchange="handleFileUpload(event)" style="margin-top: 10px; display: block;">
+        </div>
+    </div>
+
+    <!-- 單字解析 Modal -->
+    <div id="infoModal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('infoModal')">&times;</span>
+            <h2 id="modalWordTitle" style="color: #0984e3;">Word</h2>
+            <div id="modalWordContent" style="text-align: left; line-height: 1.6; font-size: 16px;"></div>
+        </div>
+    </div>
+
+    <!-- AI 提示詞 Modal -->
+    <div id="promptModal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('promptModal')">&times;</span>
+            <h3>🤖 複製提示詞給 AI (ChatGPT/Gemini)</h3>
+            <p>請將以下內容貼給 AI，它會依照格式為您生成新單字，直接貼入 words.js 中即可擴充！</p>
+            <textarea id="aiPromptText" rows="10" style="width: 100%; padding: 10px; font-size: 14px;" readonly>請幫我生成 10 個「多益常考商業英文單字」，並嚴格使用以下的 JSON 格式回傳，不要包含任何其他說明文字：
+[
+  {
+    "english": "單字",
+    "chinese": "中文意思 (詞性)",
+    "sentence": "多益程度的英文例句。",
+    "synonyms": "同義字1 (中文), 同義字2 (中文)",
+    "antonyms": "反義字1 (中文)",
+    "confused": "易混淆字 (中文) / 詞組",
+    "roots": "字根/字首解析",
+    "youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+單字"
+  }
+]</textarea>
+            <button class="btn-primary" onclick="copyPrompt()" style="margin-top: 10px;">📋 複製提示詞</button>
+        </div>
+    </div>
+
+    <script src="words.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>

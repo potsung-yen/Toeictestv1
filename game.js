@@ -361,15 +361,23 @@ function endGameEarly() {
 // ==========================================
 function showWordInfo() {
     document.getElementById("modalWordTitle").innerText = currentWord.english;
+    
+    // 判斷是否有 YouTube 連結
+    let youtubeLinkHTML = currentWord.youtube 
+        ? `<p><b>▶️ 影音發音：</b> <a href="${currentWord.youtube}" target="_blank" style="color: #d63031; text-decoration: underline; font-weight: bold;">在 YouTube 上聽發音</a></p>` 
+        : "";
+
     document.getElementById("modalWordContent").innerHTML = `
         <p><b>📝 意思：</b> ${currentWord.chinese}</p>
         <p><b>🧬 字根字首：</b> <span style="color:#d35400;">${currentWord.roots || "暫無資料"}</span></p>
         <p><b>🔄 同義字：</b> ${currentWord.synonyms || "無"}</p>
         <p><b>↔️ 反義字：</b> ${currentWord.antonyms || "無"}</p>
         <p><b>⚠️ 易混淆：</b> <span style="color:#c0392b;">${currentWord.confused || "無"}</span></p>
+        ${youtubeLinkHTML}
     `;
     document.getElementById("infoModal").style.display = "flex";
 }
+
 
 function closeModal(id) { 
     document.getElementById(id).style.display = "none"; 

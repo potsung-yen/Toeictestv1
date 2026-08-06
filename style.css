@@ -124,7 +124,7 @@ h3 { color: #2d3436; margin-top: 0; }
 ========================================= */
 .modal { 
     position: fixed; 
-    z-index: 9999; /* 確保在最上層 */
+    z-index: 9999; /* 確保在最上層，解決遮擋與無法點擊問題 */
     left: 0; top: 0; width: 100%; height: 100%; 
     background-color: rgba(0,0,0,0.6); 
     display: flex; justify-content: center; align-items: center; 
@@ -145,11 +145,33 @@ h3 { color: #2d3436; margin-top: 0; }
 }
 .close-btn:hover { color: #d63031; }
 
-.word-list-container { 
-    text-align: left; overflow-y: auto; flex-grow: 1; border: 2px solid #dfe6e9; 
-    padding: 10px; border-radius: 8px; margin-bottom: 15px; background: #fafafa;
+/* =========================================
+   單字管理後台表格樣式 (手機適應)
+========================================= */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
-.word-item { padding: 8px 5px; border-bottom: 1px dashed #ced6e0; font-size: 16px; display: flex; align-items: center; }
-.word-item:hover { background-color: #f1f2f6; }
-.word-checkbox { width: 18px; height: 18px; margin-right: 10px; cursor: pointer; }
-.word-item label { cursor: pointer; flex-grow: 1; color: #2d3436; }
+th, td {
+    border-bottom: 1px solid #ecf0f1;
+    vertical-align: middle;
+}
+th {
+    background-color: #0984e3;
+    color: white;
+    font-weight: bold;
+}
+tbody tr:hover {
+    background-color: #f1f2f6;
+}
+/* 讓表格在手機端可以左右滑動，不會擠壓破版 */
+div[style*="overflow-x: auto;"] {
+    -webkit-overflow-scrolling: touch;
+    margin-top: 15px;
+    border: 1px solid #dfe6e9;
+    border-radius: 8px;
+}

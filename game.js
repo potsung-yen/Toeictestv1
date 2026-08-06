@@ -32,8 +32,8 @@ let masteredWords = 0;      // 已經「答對」的單字數 (用於計算總�
 let currentRoundIndex = 0;  // 本回合目前的題號
 let roundNumber = 1;        // 回合數 (1=初測, 2=第1次複測, 以此類推)
 
-// 玩家進度資料庫
-let playerData = { score: 0, errorCounts: {}, customGroups: {} }; 
+// 玩家進度資料庫 (加入 unknownWords 陣列)
+let playerData = { score: 0, errorCounts: {}, customGroups: {}, unknownWords: [] }; 
 
 document.addEventListener("DOMContentLoaded", () => {
     loadUserData();
@@ -47,6 +47,14 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         });
     }
+    
+    // 綁定搜尋框的 Enter 鍵
+    const searchInput = document.getElementById("searchInput");
+    if (searchInput) {
+        searchInput.addEventListener("keypress", (e) => {
+            if (e.key === "Enter") searchWord();
+        });
+    }
 });
 
 // ==========================================
@@ -57,19 +65,23 @@ function loadUserData() {
     if (nameInput) {
         currentPlayer = nameInput.value.trim() || "冒險王";
     }
+    
     let data = localStorage.getItem(`SpHero_${currentPlayer}`);
     if (data) {
         playerData = JSON.parse(data);
         if (!playerData.errorCounts) playerData.errorCounts = {};
         if (!playerData.customGroups) playerData.customGroups = {};
+        if (!playerData.unknownWords) playerData.unknownWords = []; // 初始化未收錄清單
     } else {
-        playerData = { score: 0, errorCounts: {}, customGroups: {} };
+        playerData = { score: 0, errorCounts: {}, customGroups: {}, unknownWords: [] };
     }
     
     const scoreElem = document.getElementById("score");
     if (scoreElem) scoreElem.innerText = playerData.score;
+    
     updateDashboardUI();
     updateGroupSelect();
+    updateUnknownWordsUI(); // 更新未收錄單字介面
 }
 
 function saveUserData() {
@@ -414,4 +426,108 @@ function exportMistakes() {
     link.href = URL.createObjectURL(blob);
     link.download = `我的錯題本.csv`;
     link.click();
+}
+
+// ==========================================
+// 📖 字典查詢與「未收錄單字」自動捕捉系統
+// ==========================================
+function searchWord() {
+    const searchInput = document.getElementById("searchInput");
+    if (!searchInput) return;
+    
+    const query = searchInput.value.trim().toLowerCase();
+    const resultArea = document.getElementById("searchResultArea");
+    if (!query) { resultArea.style.display = "none"; return; }
+    
+    const matches = wordList.filter(w => w.english.toLowerCase().includes(query) || (w.chinese && w.chinese.includes(query)));
+    
+    if (matches.length === 0) {
+        // 找不到單字 ➔ 自動加入未收錄清單 (去重複)
+        if (!playerData.unknownWords.includes(query)) {
+            playerData.unknownWords.push(query);
+            saveUserData();
+            updateUnknownWordsUI();
+        }
+        
+        resultArea.innerHTML = `<p style="color: #d63031; font-weight: bold;">找不到與「${query}」相關的單字 😢<br><span style="font-size:14px; color:#636e72;">已自動將此單字加入待擴充清單！</span></p>`;
+    } else {
+        // 找到單字 ➔ 顯示結果
+        resultArea.innerHTML = matches.map(w => `
+            <div style="background:#f1f2f6; padding:12px; margin-bottom:10px; border-radius:8px; border-left: 5px solid #0984e3;">
+                <h4 style="margin:0 0 5px 0; color:#2c3e50; font-size:18px;">${w.english} <span style="font-size:14px; color:#636e72; font-weight:normal;">${w.chinese}</span></h4>
+                <p style="margin:0; font-size:14px; color:#555; font-style:italic;">${w.sentence || "暫無例句"}</p>
+            </div>
+        `).join("");
+    }
+    resultArea.style.display = "block";
+}
+
+// 更新未收錄單字介面
+function updateUnknownWordsUI() {
+    const area = document.getElementById("unknownWordsArea");
+    const countSpan = document.getElementById("unknownCount");
+    const listDiv = document.getElementById("unknownWordsList");
+    if (!area || !countSpan || !listDiv) return;
+
+    if (!playerData.unknownWords || playerData.unknownWords.length === 0) {
+        area.style.display = "none";
+        return;
+    }
+
+    area.style.display = "block";
+    countSpan.innerText = playerData.unknownWords.length;
+    
+    // 生成精美的單字標籤
+    listDiv.innerHTML = playerData.unknownWords.map(word => 
+        `<span style="background: white; border: 1px solid #fdcb6e; padding: 5px 10px; border-radius: 15px; font-weight: bold; color: #e17055; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">${word}</span>`
+    ).join("");
+}
+
+// 一鍵複製 AI 擴充提示詞
+function copyUnknownWordsPrompt() {
+    if (!playerData.unknownWords || playerData.unknownWords.length === 0) return;
+    
+    const wordListStr = playerData.unknownWords.join(",\n");
+    const prompt = `你現在是一位專業的多益英文老師與資料工程師。
+請幫我針對以下這批單字，自動補齊資訊並輸出成 JSON 陣列：
+1. 多益 (TOEIC) 程度的實用商業例句 (須確保無特殊跳脫字元衝突)。
+2. 該單字的字根字首解析 (若無則填寫 "無")。
+3. 3~5 個同義字 (附中文)。
+4. 3~5 個反義字 (附中文，若無則填寫 "無")。
+5. 2~3 個易混淆字 (附中文，若無則填寫 "無")。
+
+請「嚴格」依照以下的純 JSON 陣列格式輸出，不要包含任何 Markdown 標記，直接輸出讓我能複製到 JS 檔中的純 JSON：
+[
+  {
+    "english": "單字",
+    "chinese": "中文意思 (詞性)",
+    "sentence": "多益例句。",
+    "synonyms": "同義字1 (中文), 同義字2 (中文)",
+    "antonyms": "反義字1 (中文)",
+    "confused": "易混淆字 (中文)",
+    "roots": "字根字首解析",
+    "youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+單字"
+  }
+]
+
+以下是需要處理的單字清單：
+${wordListStr}`;
+
+    const tempInput = document.createElement("textarea");
+    tempInput.value = prompt;
+    document.body.appendChild(tempInput);
+    tempInput.select();
+    document.execCommand("copy");
+    document.body.removeChild(tempInput);
+    
+    alert("✅ AI 提示詞與待擴充單字已成功複製！\n\n請直接貼給 ChatGPT/Gemini 產生 JSON 陣列，然後接在您的 words.js 檔案最下方！");
+}
+
+// 清空未收錄清單
+function clearUnknownWords() {
+    if (confirm("確定要清空這些尚未收錄的單字嗎？")) {
+        playerData.unknownWords = [];
+        saveUserData();
+        updateUnknownWordsUI();
+    }
 }

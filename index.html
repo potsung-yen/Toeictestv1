@@ -2,7 +2,7 @@
 <html lang="zh-TW">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>多益單字冒險王 - TOEIC Spelling Hero</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -75,7 +75,8 @@
             </div>
 
             <div id="spellingArea" class="input-group">
-                <input type="text" id="englishInput" placeholder="輸入英文單字..." autocomplete="off" autocapitalize="none">
+                <!-- 已加入手機防作弊與自動矯正關閉屬性 -->
+                <input type="text" id="englishInput" placeholder="輸入英文單字..." autocomplete="off" autocorrect="off" autocapitalize="none" spellcheck="false">
                 <button type="button" class="btn-primary" id="submitBtn" onclick="checkAnswer()">送出</button>
             </div>
 
@@ -120,6 +121,30 @@
                         <!-- 由 JS 動態生成 -->
                     </tbody>
                 </table>
+            </div>
+        </div>
+
+        <!-- 📖 字典查詢與自動收錄擴充區 -->
+        <div class="card">
+            <h3>📖 單字隨查與擴充</h3>
+            <div class="input-group" style="display: flex; gap: 10px;">
+                <input type="text" id="searchInput" placeholder="搜尋英文或中文..." style="flex-grow: 1;">
+                <button type="button" class="btn-primary" onclick="searchWord()">🔍 搜尋</button>
+            </div>
+            <div id="searchResultArea" style="display: none; margin-top: 15px; text-align: left;"></div>
+            
+            <!-- 🚨 自動記錄未收錄單字區塊 (預設隱藏，有字才會顯示) -->
+            <div id="unknownWordsArea" style="margin-top: 20px; background: #ffeaa7; padding: 15px; border-radius: 10px; display: none; text-align: left;">
+                <h4 style="margin-top: 0; color: #d63031;">📝 尚未收錄單字 (<span id="unknownCount">0</span>)</h4>
+                <p style="font-size: 14px; color: #636e72; margin-bottom: 10px;">這些是您查詢過但系統沒有的單字，點擊按鈕一鍵交給 AI 擴充！</p>
+                
+                <!-- 顯示未收錄單字的標籤區 -->
+                <div id="unknownWordsList" style="display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 15px;"></div>
+                
+                <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+                    <button type="button" class="btn-success" onclick="copyUnknownWordsPrompt()">📋 複製 AI 擴充提示詞</button>
+                    <button type="button" class="btn-secondary" onclick="clearUnknownWords()">🗑️ 清空清單</button>
+                </div>
             </div>
         </div>
     </div>

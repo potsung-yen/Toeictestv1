@@ -389,9 +389,8 @@ function endGameEarly() {
 function showWordInfo() {
     document.getElementById("modalWordTitle").innerText = currentWord.english;
     
-    let youtubeLinkHTML = currentWord.youtube 
-        ? `<p><b>▶️ 影音發音：</b> <a href="${currentWord.youtube}" target="_blank" style="color: #d63031; text-decoration: underline; font-weight: bold;">在 YouTube 上聽發音</a></p>` 
-        : "";
+    // 直接用 currentWord.english 動態產生 YouTube 搜尋網址，徹底避開 JSON 格式錯誤！
+    let youtubeLinkHTML = `<p><b>▶️ 影音發音：</b> <a href="https://www.youtube.com/results?search_query=how+to+pronounce+${encodeURIComponent(currentWord.english)}" target="_blank" style="color: #d63031; text-decoration: underline; font-weight: bold;">在 YouTube 上聽發音</a></p>`;
 
     document.getElementById("modalWordContent").innerHTML = `
         <p><b>📝 意思：</b> ${currentWord.chinese}</p>

@@ -310,6 +310,218 @@ SpellingHeroData = SpellingHeroData.concat(
   // 🔽🔽🔽 請從這裡開始貼上 AI 產生的 JSON
 [
 {
+"english": "representative",
+"chinese": "代表 (n.) / 具代表性的 (adj.)",
+"sentence": "The sales representative will contact you shortly to discuss the contract details.",
+"synonyms": "delegate (代表), agent (代理人), spokesperson (發言人)",
+"antonyms": "atypical (非代表性的), unrepresentative (無代表性的), unusual (不尋常的)",
+"confused": "representation (表現/代表權), represent (代表)",
+"roots": "re- (再/回) + present (呈現) + -ative (形容詞/名詞字尾)",
+"youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+representative"
+},
+{
+"english": "effectively",
+"chinese": "有效地 (adv.)",
+"sentence": "The new software allows us to manage customer data more effectively.",
+"synonyms": "efficiently (有效率地), successfully (成功地), productively (多產地)",
+"antonyms": "ineffectively (無效地), poorly (糟糕地), unproductively (無效地)",
+"confused": "affectively (情感上地), efficiently (有效率地)",
+"roots": "ex- (外/出) + facere (做) + -ive (形容詞字尾) + -ly (副詞字尾)",
+"youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+effectively"
+},
+{
+"english": "immediate",
+"chinese": "立即的 / 直接的 (adj.)",
+"sentence": "Please give this urgent matter your immediate attention to prevent further issues.",
+"synonyms": "instant (立即的), prompt (迅速的), swift (快速的)",
+"antonyms": "delayed (延遲的), postponed (延期的), slow (緩慢的)",
+"confused": "intermediate (中級的/中間的), mediate (調停)",
+"roots": "in- (無/不) + medius (中間) -> 中間無間隔的 -> 立即的",
+"youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+immediate"
+},
+{
+"english": "ensure",
+"chinese": "確保 / 保證 (v.)",
+"sentence": "Please ensure that all confidential documents are shredded before you leave the office.",
+"synonyms": "guarantee (保證), make sure (確保), secure (使安全)",
+"antonyms": "endanger (危及), jeopardize (使受危險), risk (冒險)",
+"confused": "insure (投保), assure (向...保證)",
+"roots": "en- (使成為) + sure (確定)",
+"youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+ensure"
+},
+{
+"english": "intended",
+"chinese": "預期的 / 為...打算的 (adj.)",
+"sentence": "The intended audience for this marketing campaign is young professionals in urban areas.",
+"synonyms": "planned (計畫好的), expected (預期的), proposed (提議的)",
+"antonyms": "accidental (意外的), unintended (非計畫中的), unintentional (無意的)",
+"confused": "extended (延長的), pretend (假裝)",
+"roots": "in- (向內/朝向) + tendere (伸展) + -ed (形容詞字尾)",
+"youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+intended"
+},
+{
+"english": "controversial",
+"chinese": "有爭議的 (adj.)",
+"sentence": "The board of directors decided to drop the controversial proposal after employee protests.",
+"synonyms": "debatable (可爭論的), disputable (有爭議的), contentious (有異議的)",
+"antonyms": "undisputed (無可爭議的), agreeable (令人愉快的), certain (確定的)",
+"confused": "commercial (商業的), control (控制)",
+"roots": "contra- (反對) + vertere (轉向) + -ial (形容詞字尾)",
+"youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+controversial"
+},
+{
+"english": "investment",
+"chinese": "投資 (n.)",
+"sentence": "Buying real estate in this rapidly growing city has proven to be a profitable long-term investment.",
+"synonyms": "funding (資金), asset (資產), backing (贊助)",
+"antonyms": "divestment (撤資), withdrawal (撤出/提款), loss (損失)",
+"confused": "investigation (調查), inventory (存貨)",
+"roots": "in- (進入) + vestire (穿衣/賦予) + -ment (名詞字尾)",
+"youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+investment"
+},
+{
+"english": "anticipated",
+"chinese": "預期的 (adj.) / anticipate 的過去式 (v.)",
+"sentence": "The company's quarterly profits were much higher than originally anticipated.",
+"synonyms": "expected (預期的), predicted (預測的), foreseen (預見的)",
+"antonyms": "unexpected (出乎意料的), surprising (令人驚訝的), unforeseen (未預見的)",
+"confused": "participated (參加), emancipated (解放的)",
+"roots": "ante- (前/先) + capere (拿取) + -ed (形容詞字尾)",
+"youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+anticipated"
+},
+{
+"english": "prices",
+"chinese": "價格 (n. 複數)",
+"sentence": "We are offering special discounted prices for our most loyal corporate clients this month.",
+"synonyms": "costs (成本), rates (費率), charges (費用)",
+"antonyms": "無",
+"confused": "prizes (獎品), praises (讚美)",
+"roots": "源自拉丁文 pretium (價值/報酬)",
+"youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+prices"
+},
+{
+"english": "presentation",
+"chinese": "簡報 / 呈現 (n.)",
+"sentence": "The CEO will give a presentation on the new global marketing strategy tomorrow morning.",
+"synonyms": "demonstration (示範), lecture (演講), briefing (簡報)",
+"antonyms": "concealment (隱藏), hiding (躲藏), suppression (壓制)",
+"confused": "preservation (保存), preparation (準備)",
+"roots": "pre- (前) + esse (存在) -> present (出席/呈現) + -ation (名詞字尾)",
+"youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+presentation"
+},
+{
+"english": "summarizing",
+"chinese": "總結 / 摘要 (v. 現在分詞)",
+"sentence": "The manager is summarizing the main points of the contract for the clients before they sign.",
+"synonyms": "outlining (概述), concluding (總結), recapping (扼要重述)",
+"antonyms": "expanding (擴展), elaborating (詳細說明), detailing (詳述)",
+"confused": "mesmerizing (令人著迷的), summering (避暑)",
+"roots": "sum- (最高/總和) + -ize (動詞字尾) + -ing (現在分詞字尾)",
+"youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+summarizing"
+},
+{
+"english": "target",
+"chinese": "目標 (n.) / 把...作為目標 (v.)",
+"sentence": "Our sales team failed to meet their monthly sales target by a very small margin.",
+"synonyms": "goal (目標), objective (目的), aim (瞄準/目標)",
+"antonyms": "無",
+"confused": "market (市場), ticket (票)",
+"roots": "源自古法語 targe (盾牌) + -et (小詞綴)",
+"youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+target"
+},
+{
+"english": "chain",
+"chinese": "連鎖店 / 鏈 (n.)",
+"sentence": "The international hotel chain is planning to open three new branches in Southeast Asia.",
+"synonyms": "series (系列), sequence (順序), string (一串)",
+"antonyms": "無",
+"confused": "train (火車), chair (椅子)",
+"roots": "源自拉丁文 catena (鏈條)",
+"youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+chain"
+},
+{
+"english": "sudden",
+"chinese": "突然的 (adj.)",
+"sentence": "There was a sudden drop in consumer demand due to the unexpected economic crisis.",
+"synonyms": "unexpected (意外的), abrupt (唐突的), rapid (快速的)",
+"antonyms": "gradual (漸進的), expected (預期的), slow (緩慢的)",
+"confused": "sadden (使悲傷), sodden (濕透的)",
+"roots": "源自拉丁文 subitus (突然的)",
+"youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+sudden"
+},
+{
+"english": "disruption",
+"chinese": "中斷 / 擾亂 (n.)",
+"sentence": "Heavy snowfall caused a major disruption to the local transportation network.",
+"synonyms": "disturbance (干擾), interruption (中斷), interference (干涉)",
+"antonyms": "order (秩序), continuation (繼續), organization (組織)",
+"confused": "eruption (爆發), corruption (貪腐)",
+"roots": "dis- (分開/散開) + rumpere (打破) + -tion (名詞字尾)",
+"youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+disruption"
+},
+{
+"english": "significant",
+"chinese": "重要的 / 顯著的 (adj.)",
+"sentence": "The new marketing strategy has led to a significant increase in our online sales.",
+"synonyms": "important (重要的), substantial (大量的/實質的), notable (顯著的)",
+"antonyms": "insignificant (微不足道的), trivial (瑣碎的), minor (次要的)",
+"confused": "magnificent (壯麗的), signature (簽名)",
+"roots": "sign- (記號/標記) + facere (製造) + -ant (形容詞字尾)",
+"youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+significant"
+},
+{
+"english": "regional",
+"chinese": "地區的 / 局部的 (adj.)",
+"sentence": "The regional manager will visit our branch next week to inspect the new facilities.",
+"synonyms": "local (當地的), provincial (省的), territorial (領土的)",
+"antonyms": "global (全球的), international (國際的), national (全國的)",
+"confused": "rational (理性的), religion (宗教)",
+"roots": "regere (統治/管理) -> region (區域) + -al (形容詞字尾)",
+"youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+regional"
+},
+{
+"english": "manufacturers",
+"chinese": "製造商 (n. 複數)",
+"sentence": "Many automobile manufacturers are investing heavily in the development of electric vehicles.",
+"synonyms": "producers (生產者), makers (製造者), creators (創造者)",
+"antonyms": "consumers (消費者), buyers (買家), customers (顧客)",
+"confused": "fabricators (裝配工/捏造者), manual (手冊)",
+"roots": "manu- (手) + facere (製造) + -er (人) + -s (複數字尾)",
+"youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+manufacturers"
+},
+{
+"english": "inspired",
+"chinese": "受到啟發的 (adj.) / inspire 的過去式 (v.)",
+"sentence": "The design of our new corporate headquarters was inspired by traditional Japanese architecture.",
+"synonyms": "motivated (有動機的), encouraged (受鼓勵的), influenced (受影響的)",
+"antonyms": "uninspired (無靈感的), discouraged (氣餒的), unmotivated (無積極性的)",
+"confused": "expired (過期的), conspired (共謀的)",
+"roots": "in- (進入) + spirare (呼吸) -> 注入氣息 + -ed (形容詞字尾)",
+"youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+inspired"
+},
+{
+"english": "engaging",
+"chinese": "吸引人的 / 迷人的 (adj.)",
+"sentence": "The speaker gave a highly engaging presentation that kept everyone's attention until the end.",
+"synonyms": "attractive (吸引人的), appealing (迷人的), captivating (令人著迷的)",
+"antonyms": "boring (無聊的), uninteresting (無趣的), dull (乏味的)",
+"confused": "gauging (測量), enraged (被激怒的)",
+"roots": "en- (使) + gage (抵押/保證) -> 使投入 + -ing (形容詞字尾)",
+"youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+engaging"
+},
+{
+"english": "attendees",
+"chinese": "出席者 / 參加者 (n. 複數)",
+"sentence": "All attendees will receive a digital copy of the conference materials via email.",
+"synonyms": "participants (參加者), guests (賓客), visitors (訪客)",
+"antonyms": "absentees (缺席者), truants (曠工/曠課者), skippers (逃避者)",
+"confused": "attendants (服務員), attention (注意力)",
+"roots": "ad- (朝向) + tendere (伸展) -> attend (參加) + -ee (接受動作的人) + -s (複數字尾)",
+"youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+attendees"
+}
+]
+,[
+{
 "english": "absurd",
 "chinese": "荒謬的 (adj.)",
 "sentence": "It is absurd to expect the project to be finished in one day.",

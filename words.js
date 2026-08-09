@@ -310,6 +310,198 @@ SpellingHeroData = SpellingHeroData.concat(
   // 🔽🔽🔽 請從這裡開始貼上 AI 產生的 JSON
 [
 {
+"english": "despite",
+"chinese": "儘管；雖然 (prep.)",
+"sentence": "Despite the recent economic downturn, our company achieved a record profit this quarter.",
+"synonyms": "in spite of (儘管), regardless of (不顧), notwithstanding (雖然)",
+"antonyms": "無",
+"confused": "despise (鄙視), in spite of (易混淆用法，despite 後不加 of)",
+"roots": "de- (向下) + specere (看) -> 原意為向下看、藐視，後引申為不顧、儘管",
+"youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+despite"
+},
+{
+"english": "fierce",
+"chinese": "激烈的；猛烈的 (adj.)",
+"sentence": "The smartphone market is facing fierce competition from emerging brands.",
+"synonyms": "intense (激烈的), ferocious (兇猛的), severe (嚴峻的)",
+"antonyms": "mild (溫和的), gentle (柔和的), calm (平靜的)",
+"confused": "pierce (刺穿), piece (碎片)",
+"roots": "源自拉丁文 ferus (野生的、未馴服的)",
+"youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+fierce"
+},
+{
+"english": "drastically",
+"chinese": "大幅地；徹底地 (adv.)",
+"sentence": "The new inventory management system has drastically reduced our operational costs.",
+"synonyms": "significantly (顯著地), severely (嚴重地), radically (根本地)",
+"antonyms": "mildly (溫和地), slightly (稍微地), moderately (適度地)",
+"confused": "dramatically (戲劇性地)",
+"roots": "drast- (行動、嚴厲的) + -ic (形容詞字尾) + -ally (副詞字尾)",
+"youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+drastically"
+},
+{
+"english": "platforms",
+"chinese": "平台；月台 (n.)",
+"sentence": "We are planning to launch our advertising campaigns across multiple digital platforms.",
+"synonyms": "stages (舞台), forums (論壇), foundations (基礎)",
+"antonyms": "無",
+"confused": "plateaus (高原), plates (盤子)",
+"roots": "plat- (平坦的) + form (形狀)",
+"youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+platforms"
+},
+{
+"english": "construction",
+"chinese": "建設；建築物 (n.)",
+"sentence": "The construction of the new headquarters is expected to be completed by next year.",
+"synonyms": "building (建築), structure (結構), creation (建造)",
+"antonyms": "destruction (破壞), demolition (拆除)",
+"confused": "instruction (指示), destruction (破壞)",
+"roots": "con- (共同) + struct (建立) + -ion (名詞字尾)",
+"youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+construction"
+},
+{
+"english": "chemical",
+"chinese": "化學的 (adj.) / 化學物質 (n.)",
+"sentence": "The factory must comply with strict safety regulations when handling hazardous chemicals.",
+"synonyms": "substance (物質), compound (化合物), synthetic (合成的)",
+"antonyms": "natural (天然的), organic (有機的)",
+"confused": "clinical (臨床的), medical (醫療的)",
+"roots": "chem- (化學) + -ical (形容詞字尾)",
+"youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+chemical"
+},
+{
+"english": "annual",
+"chinese": "年度的；一年一度的 (adj.)",
+"sentence": "All employees are required to attend the annual performance review meeting.",
+"synonyms": "yearly (每年的), once-a-year (一年一次的), anniversary (週年的)",
+"antonyms": "daily (每天的), monthly (每月的)",
+"confused": "manual (手冊/手動的), annul (廢除)",
+"roots": "ann- (年) + -ual (形容詞字尾)",
+"youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+annual"
+},
+{
+"english": "immediately",
+"chinese": "立即；馬上 (adv.)",
+"sentence": "Please report any technical issues to the IT department immediately.",
+"synonyms": "instantly (立即地), promptly (迅速地), right away (馬上)",
+"antonyms": "delayed (延遲地), eventually (最終), later (稍後)",
+"confused": "intimately (親密地), mediately (間接地)",
+"roots": "im- (不) + mediate (居中/延遲) + -ly (副詞字尾) -> 不拖延即立刻",
+"youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+immediately"
+},
+{
+"english": "orchestra",
+"chinese": "管弦樂團 (n.)",
+"sentence": "The corporate sponsor donated a substantial amount of money to the local symphony orchestra.",
+"synonyms": "band (樂團), ensemble (合奏團), symphony (交響樂團)",
+"antonyms": "無",
+"confused": "orchid (蘭花), orchestrate (策劃/精心安排)",
+"roots": "源自希臘文 orkhestra (合唱團跳舞的半圓形場地)",
+"youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+orchestra"
+},
+{
+"english": "antique",
+"chinese": "古董的 (adj.) / 古董 (n.)",
+"sentence": "The CEO decorated his office with rare antique furniture purchased from an auction.",
+"synonyms": "vintage (復古的), ancient (古老的), old-fashioned (老式的)",
+"antonyms": "modern (現代的), new (全新的), contemporary (當代的)",
+"confused": "unique (獨特的), boutique (精品店)",
+"roots": "ante- (在...之前) -> 衍生為古老的",
+"youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+antique"
+},
+{
+"english": "generous",
+"chinese": "慷慨的；大方的 (adj.)",
+"sentence": "The company offers a generous benefits package to attract top talent in the industry.",
+"synonyms": "liberal (慷慨的), bountiful (豐富的), unselfish (無私的)",
+"antonyms": "stingy (小氣的), mean (吝嗇的), selfish (自私的)",
+"confused": "general (一般的), genius (天才)",
+"roots": "gen- (出生、種族) + -ous (形容詞字尾) -> 出身高貴的 -> 引申為大方的",
+"youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+generous"
+},
+{
+"english": "adopted",
+"chinese": "被採用的；被收養的 (adj.)",
+"sentence": "The new marketing strategy adopted by the team has proven to be highly effective.",
+"synonyms": "accepted (被接受的), implemented (被實行的), embraced (被採納的)",
+"antonyms": "rejected (被拒絕的), discarded (被拋棄的), abandoned (被放棄的)",
+"confused": "adapted (適應的/改編的), adept (熟練的)",
+"roots": "ad- (去) + opt (選擇) + -ed (過去分詞字尾)",
+"youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+adopted"
+},
+{
+"english": "strategy",
+"chinese": "策略；戰略 (n.)",
+"sentence": "To expand into the Asian market, we need a solid business strategy and local partnerships.",
+"synonyms": "plan (計畫), approach (方法), tactic (戰術)",
+"antonyms": "無",
+"confused": "tragedy (悲劇), stratagem (計謀)",
+"roots": "strat- (軍隊) + -egy (領導) -> 將軍的藝術 -> 戰略",
+"youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+strategy"
+},
+{
+"english": "penetrate",
+"chinese": "穿透；滲透 (市場) (v.)",
+"sentence": "Our primary goal this year is to penetrate new emerging markets in Southeast Asia.",
+"synonyms": "pierce (刺穿), infiltrate (滲透), enter (進入)",
+"antonyms": "retreat (撤退), withdraw (退出)",
+"confused": "perpetrate (做壞事), punctuate (加標點符號)",
+"roots": "penitus (在內部) -> 進入內部",
+"youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+penetrate"
+},
+{
+"english": "launched",
+"chinese": "發布；發起 (v. 過去式/過去分詞)",
+"sentence": "The tech firm launched its latest smartphone model at a major press conference yesterday.",
+"synonyms": "initiated (發起的), started (開始的), introduced (推出的)",
+"antonyms": "concluded (結束的), terminated (終止的), halted (停止的)",
+"confused": "lunched (吃午餐), lounged (懶洋洋地躺臥)",
+"roots": "源自 lancea (長矛) -> 擲出長矛 -> 發起、發動",
+"youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+launched"
+},
+{
+"english": "massive",
+"chinese": "巨大的；大量的 (adj.)",
+"sentence": "The merger resulted in a massive restructuring of the management team.",
+"synonyms": "huge (巨大的), enormous (龐大的), immense (極大的)",
+"antonyms": "tiny (微小的), small (小的), insignificant (微不足道的)",
+"confused": "passive (被動的), message (訊息)",
+"roots": "mass (塊、團) + -ive (形容詞字尾)",
+"youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+massive"
+},
+{
+"english": "appreciate",
+"chinese": "感謝；欣賞；升值 (v.)",
+"sentence": "We deeply appreciate your continued support and dedication to this project.",
+"synonyms": "value (重視), acknowledge (感謝), recognize (認可)",
+"antonyms": "depreciate (貶值), disregard (忽視), ignore (不理會)",
+"confused": "depreciate (貶值), appropriate (適當的/挪用)",
+"roots": "ap- (朝向) + pretium (價值) + -ate (動詞字尾) -> 給予價值 -> 欣賞、感謝",
+"youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+appreciate"
+},
+{
+"english": "prevent",
+"chinese": "預防；阻止 (v.)",
+"sentence": "Regular maintenance is necessary to prevent any unexpected system failures.",
+"synonyms": "stop (停止), avoid (避免), avert (避開)",
+"antonyms": "encourage (鼓勵), allow (允許), cause (導致)",
+"confused": "invent (發明), present (呈現/禮物)",
+"roots": "pre- (在...之前) + vent (來) -> 提早來到以阻擋",
+"youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+prevent"
+},
+{
+"english": "crashes",
+"chinese": "碰撞；(電腦) 當機；暴跌 (n./v. 第三人稱單數)",
+"sentence": "To avoid data loss from unexpected system crashes, please back up your files daily.",
+"synonyms": "collisions (碰撞), breakdowns (故障), collapses (崩潰)",
+"antonyms": "recoveries (恢復), fixes (修復)",
+"confused": "clashes (衝突), crushes (壓碎)",
+"roots": "中古英語，模擬物體碎裂的巨大聲響而造的擬聲詞",
+"youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+crashes"
+}
+]
+,[
+{
 "english": "representative",
 "chinese": "代表 (n.) / 具代表性的 (adj.)",
 "sentence": "The sales representative will contact you shortly to discuss the contract details.",

@@ -310,6 +310,168 @@ SpellingHeroData = SpellingHeroData.concat(
   // 🔽🔽🔽 請從這裡開始貼上 AI 產生的 JSON
 [
 {
+"english": "lawsuit",
+"chinese": "訴訟 (名詞)",
+"sentence": "The company is facing a massive lawsuit due to the recent data breach.",
+"synonyms": "litigation (訴訟), case (案件), action (訴訟)",
+"antonyms": "settlement (和解), agreement (協議)",
+"confused": "law (法律), lawyer (律師)",
+"roots": "law (法律) + suit (訴訟/追求)",
+"youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+lawsuit"
+},
+{
+"english": "infringing",
+"chinese": "侵犯；違反 (動詞/現在分詞)",
+"sentence": "They were accused of infringing upon the patent rights of their main competitor.",
+"synonyms": "violating (違反), breaching (破壞/違反), trespassing (侵入)",
+"antonyms": "obeying (遵守), complying (順從), following (遵循)",
+"confused": "inflicting (施加)",
+"roots": "in- (進入) + fring/frangere (打破) + -ing (現在分詞字尾)",
+"youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+infringing"
+},
+{
+"english": "projector",
+"chinese": "投影機 (名詞)",
+"sentence": "Please make sure the projector is set up before the client presentation begins.",
+"synonyms": "beamer (投影機), visualizer (視覺化設備)",
+"antonyms": "無",
+"confused": "project (專案/計畫), protector (保護者)",
+"roots": "pro- (向前) + ject (投擲) + -or (名詞字尾，表示事物或人)",
+"youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+projector"
+},
+{
+"english": "technician",
+"chinese": "技術人員 (名詞)",
+"sentence": "A certified technician will be dispatched to repair the malfunctioning server.",
+"synonyms": "mechanic (技工), specialist (專家), engineer (工程師)",
+"antonyms": "amateur (業餘者), novice (新手)",
+"confused": "technique (技術/技巧), technology (科技)",
+"roots": "techn (技術) + -ician (名詞字尾，表示...的專家)",
+"youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+technician"
+},
+{
+"english": "tech",
+"chinese": "科技；技術 (名詞/形容詞)",
+"sentence": "The tech industry has seen a massive boom in artificial intelligence developments.",
+"synonyms": "technology (科技), high-tech (高科技)",
+"antonyms": "無",
+"confused": "teach (教導)",
+"roots": "縮寫自 technology (techno- 技巧/工藝 + -logy 學科)",
+"youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+tech"
+},
+{
+"english": "began",
+"chinese": "開始 (動詞，begin 的過去式)",
+"sentence": "The marketing campaign began earlier than expected to capture the holiday sales.",
+"synonyms": "started (開始), commenced (開始), initiated (發起)",
+"antonyms": "ended (結束), finished (完成), concluded (結束)",
+"confused": "begun (開始，過去分詞), vegan (純素主義者)",
+"roots": "be- (使...) + -ginnan (打開/開始，古英語)",
+"youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+began"
+},
+{
+"english": "quarterly",
+"chinese": "季度的；每季地 (形容詞/副詞/名詞)",
+"sentence": "We need to submit the quarterly financial report by the end of this week.",
+"synonyms": "periodically (週期性地)",
+"antonyms": "yearly (每年的), annual (年度的), monthly (每月的)",
+"confused": "quarter (四分之一/季), quota (配額)",
+"roots": "quarter (四分之一/一季) + -ly (形容詞/副詞字尾)",
+"youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+quarterly"
+},
+{
+"english": "sterilize",
+"chinese": "殺菌；消毒 (動詞)",
+"sentence": "The cleaning staff must sterilize the laboratory equipment after each experiment.",
+"synonyms": "disinfect (消毒), sanitize (進行衛生處理), purify (淨化)",
+"antonyms": "contaminate (汙染), infect (感染), pollute (汙染)",
+"confused": "fertilizer (肥料), stereotype (刻板印象)",
+"roots": "steril (無菌的/不育的) + -ize (動詞字尾，使化)",
+"youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+sterilize"
+},
+{
+"english": "sensitive",
+"chinese": "敏感的；機密的 (形容詞)",
+"sentence": "You must handle these sensitive documents with care and ensure they remain confidential.",
+"synonyms": "confidential (機密的), delicate (脆弱的/微妙的), classified (機密的)",
+"antonyms": "insensitive (不敏感的), public (公開的), indifferent (漠不關心的)",
+"confused": "sensible (明智的/合理的)",
+"roots": "sens (感覺) + -ive (形容詞字尾，有...傾向的)",
+"youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+sensitive"
+},
+{
+"english": "convicted",
+"chinese": "被定罪的；證明有罪 (動詞過去式/形容詞)",
+"sentence": "The former CEO was convicted of fraud and sentenced to five years in prison.",
+"synonyms": "condemned (被判刑的), sentenced (被判決的), found guilty (被判有罪的)",
+"antonyms": "acquitted (被宣告無罪的), exonerated (被免除責任的), cleared (被證明無罪的)",
+"confused": "convinced (確信的/被說服的)",
+"roots": "con- (完全) + vict (征服/證明有罪) + -ed (過去式/形容詞字尾)",
+"youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+convicted"
+},
+{
+"english": "manipulating",
+"chinese": "操縱；控制 (動詞/現在分詞)",
+"sentence": "The auditor discovered that someone had been manipulating the financial records.",
+"synonyms": "controlling (控制), handling (處理), maneuvering (操縱), operating (操作)",
+"antonyms": "leaving alone (放任), destroying (破壞)",
+"confused": "manufacturing (製造), multiplying (乘/增加)",
+"roots": "mani/manu (手) + pulare (充滿/操作) + -ing (現在分詞字尾)",
+"youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+manipulating"
+},
+{
+"english": "crucial",
+"chinese": "決定性的；至關重要的 (形容詞)",
+"sentence": "Effective communication is crucial for the success of any multinational project.",
+"synonyms": "critical (關鍵的), essential (必要的), vital (至關重要的), pivotal (樞紐的/關鍵的)",
+"antonyms": "trivial (瑣碎的), unimportant (不重要的), minor (次要的)",
+"confused": "cruel (殘酷的)",
+"roots": "cruc (十字架/轉折點) + -ial (形容詞字尾)",
+"youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+crucial"
+},
+{
+"english": "remote",
+"chinese": "遙遠的；遠端的 (形容詞)",
+"sentence": "The company implemented a flexible policy that allows employees to work from a remote location.",
+"synonyms": "distant (遙遠的), faraway (遙遠的), isolated (孤立的)",
+"antonyms": "close (近的), nearby (附近的), adjacent (鄰近的)",
+"confused": "remove (移除), promote (促進/升遷)",
+"roots": "re- (向後) + mot (移動) + -e",
+"youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+remote"
+},
+{
+"english": "collaborate",
+"chinese": "合作；協作 (動詞)",
+"sentence": "The two departments will collaborate to design a more user-friendly interface.",
+"synonyms": "cooperate (合作), team up (組隊), work together (一起工作)",
+"antonyms": "compete (競爭), work independently (獨立工作), clash (起衝突)",
+"confused": "corroborate (證實/確證), elaborate (詳盡說明)",
+"roots": "col- (一起) + labor (勞動/工作) + -ate (動詞字尾)",
+"youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+collaborate"
+},
+{
+"english": "efficiently",
+"chinese": "高效地 (副詞)",
+"sentence": "The new software enables us to process customer inquiries much more efficiently.",
+"synonyms": "effectively (有效地), productively (有生產力地), proficiently (熟練地)",
+"antonyms": "inefficiently (無效率地), poorly (糟糕地), slowly (緩慢地)",
+"confused": "effectively (有效地 - 側重於達成目標，efficiently 側重於省時省力)",
+"roots": "ef- (向外) + fic/fac (做) + -ient (形容詞字尾) + -ly (副詞字尾)",
+"youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+efficiently"
+},
+{
+"english": "orientation",
+"chinese": "新生訓練；就職指導；方向 (名詞)",
+"sentence": "All new hires are required to attend the orientation session on Monday morning.",
+"synonyms": "induction (就職儀式), training (訓練), introduction (介紹), direction (方向)",
+"antonyms": "無",
+"confused": "ornamentation (裝飾)",
+"roots": "orient (東方/確定方向) + -ation (名詞字尾)",
+"youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+orientation"
+}
+]
+,[
+{
 "english": "despite",
 "chinese": "儘管；雖然 (prep.)",
 "sentence": "Despite the recent economic downturn, our company achieved a record profit this quarter.",

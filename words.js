@@ -310,6 +310,138 @@ SpellingHeroData = SpellingHeroData.concat(
   // 🔽🔽🔽 請從這裡開始貼上 AI 產生的 JSON
 [
 {
+"english": "strategies",
+"chinese": "策略；戰略 (名詞)",
+"sentence": "The marketing team met to discuss new strategies for entering the Asian market.",
+"synonyms": "tactics (戰術), approaches (方法), plans (計畫), schemes (方案)",
+"antonyms": "無",
+"confused": "tragedies (悲劇), stratagems (計謀)",
+"roots": "字首 stratos (軍隊) + agein (引導) + -y (名詞字尾)，轉化為引導軍隊的方法，即策略。",
+"youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+strategies"
+},
+{
+"english": "skincare",
+"chinese": "護膚 (名詞/形容詞)",
+"sentence": "Our company is launching a new line of premium skincare products next quarter.",
+"synonyms": "skin treatment (護膚療程), dermatology (皮膚病學/保養), beauty care (美容保養)",
+"antonyms": "無",
+"confused": "healthcare (醫療保健)",
+"roots": "skin (皮膚) + care (照護)，複合字。",
+"youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+skincare"
+},
+{
+"english": "ingredients",
+"chinese": "成分；原料 (名詞)",
+"sentence": "All the ingredients used in our cosmetics are organically sourced.",
+"synonyms": "components (組成部分), elements (元素), constituents (成分), contents (內容物)",
+"antonyms": "wholes (整體), totals (全部)",
+"confused": "elements (元素)",
+"roots": "字首 in- (進入) + 字根 gradi (走) + -ent (名詞字尾)，走入其中成為一部分的東西，即成分。",
+"youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+ingredients"
+},
+{
+"english": "correct",
+"chinese": "正確的 (形容詞) / 糾正 (動詞)",
+"sentence": "Please ensure that all the information on the invoice is correct before sending it out.",
+"synonyms": "accurate (準確的), right (正確的), precise (精確的), exact (確切的)",
+"antonyms": "incorrect (不正確的), wrong (錯誤的), false (錯誤的)",
+"confused": "collect (收集), connect (連接)",
+"roots": "字首 cor- (一起/完全) + 字根 rect (直的/引導)，使其完全變直，即正確的或糾正。",
+"youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+correct"
+},
+{
+"english": "survey",
+"chinese": "調查；問卷 (名詞/動詞)",
+"sentence": "According to a recent customer satisfaction survey, our service quality has significantly improved.",
+"synonyms": "poll (民意調查), questionnaire (問卷), study (研究), review (審查)",
+"antonyms": "無",
+"confused": "purvey (供應), survive (生存)",
+"roots": "字首 sur- (在...之上) + 字根 vey/vid (看)，從上面看，即調查、俯視。",
+"youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+survey"
+},
+{
+"english": "international",
+"chinese": "國際的 (形容詞)",
+"sentence": "The CEO will attend an international trade conference in Geneva next week.",
+"synonyms": "global (全球的), worldwide (全世界的), universal (普遍的)",
+"antonyms": "domestic (國內的), local (當地的), national (國家的)",
+"confused": "internal (內部的), intentional (有意的)",
+"roots": "字首 inter- (在...之間) + nation (國家) + -al (形容詞字尾)，在國家之間的，即國際的。",
+"youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+international"
+},
+{
+"english": "gala",
+"chinese": "盛會；晚會 (名詞/形容詞)",
+"sentence": "The charity gala raised over one million dollars for the local hospital.",
+"synonyms": "festival (節慶), celebration (慶典), feast (宴會), party (派對)",
+"antonyms": "無",
+"confused": "galaxy (星系)",
+"roots": "源自古法語 gale (歡樂/宴會)，引申為盛會。",
+"youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+gala"
+},
+{
+"english": "twentieth",
+"chinese": "第二十的；二十分之一 (形容詞/名詞)",
+"sentence": "The company will celebrate its twentieth anniversary with a grand banquet.",
+"synonyms": "無",
+"antonyms": "無",
+"confused": "twelfth (第十二的)",
+"roots": "twenty (二十) + -eth (序數字尾)。",
+"youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+twentieth"
+},
+{
+"english": "industry",
+"chinese": "行業；工業 (名詞)",
+"sentence": "The tech industry is constantly evolving with new innovations and startups.",
+"synonyms": "business (商業), trade (貿易), sector (部門/產業), commerce (商業)",
+"antonyms": "無",
+"confused": "industrial (工業的), industrious (勤奮的)",
+"roots": "字首 indu- (在...之內) + 字根 struere (建造) + -y (名詞字尾)，在內建造，引申為勤奮或工業。",
+"youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+industry"
+},
+{
+"english": "risks",
+"chinese": "風險；危險 (名詞/動詞)",
+"sentence": "Before investing in the stock market, you must carefully evaluate all potential risks.",
+"synonyms": "hazards (危險), dangers (危險), threats (威脅), perils (危險)",
+"antonyms": "safeties (安全), securities (保障), protections (保護)",
+"confused": "brisks (輕快的), frisks (搜身)",
+"roots": "源自義大利語 riscare (冒險)，意指航海靠近懸崖的危險。",
+"youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+risks"
+},
+{
+"english": "purchasing",
+"chinese": "採購；購買 (名詞/動名詞)",
+"sentence": "The purchasing department is responsible for negotiating contracts with our suppliers.",
+"synonyms": "buying (購買), procuring (採購), acquiring (取得), shopping (購物)",
+"antonyms": "selling (銷售), vending (販售)",
+"confused": "chasing (追逐)",
+"roots": "字首 pur- (向前) + 字根 chase (追逐) + -ing (動名詞字尾)，向前追尋獲得，即購買。",
+"youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+purchasing"
+},
+{
+"english": "mutual",
+"chinese": "相互的；共同的 (形容詞)",
+"sentence": "The merger was agreed upon because it offered mutual benefits to both corporations.",
+"synonyms": "reciprocal (互惠的), common (共同的), shared (分享的), joint (聯合的)",
+"antonyms": "distinct (不同的), separate (分開的), exclusive (獨有的)",
+"confused": "mural (壁畫), neutral (中立的)",
+"roots": "字根 mut (交換) + -ual (形容詞字尾)，有關交換的，即相互的。",
+"youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+mutual"
+},
+{
+"english": "funds",
+"chinese": "資金；基金 (名詞/動詞)",
+"sentence": "We lack the necessary funds to launch the new marketing campaign this quarter.",
+"synonyms": "capital (資本), money (金錢), finances (財務/資金), resources (資源)",
+"antonyms": "debts (債務), liabilities (負債)",
+"confused": "founds (建立), refunds (退款)",
+"roots": "源自拉丁語 fundus (底部/基礎)，引申為基礎財產或營運資金。",
+"youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+funds"
+}
+]
+,[
+{
 "english": "lawsuit",
 "chinese": "訴訟 (名詞)",
 "sentence": "The company is facing a massive lawsuit due to the recent data breach.",

@@ -310,6 +310,178 @@ SpellingHeroData = SpellingHeroData.concat(
   // 🔽🔽🔽 請從這裡開始貼上 AI 產生的 JSON
 [
 {
+"english": "directors",
+"chinese": "董事；主管；導演 (n.)",
+"sentence": "The board of directors will hold a meeting next Monday to discuss the upcoming merger.",
+"synonyms": "managers (經理), executives (高階主管), administrators (管理者), supervisors (監督者)",
+"antonyms": "subordinates (下屬), employees (員工), staff (職員)",
+"confused": "dictators (獨裁者), directories (目錄)",
+"roots": "di- (分開) + regere (引導) + -or (人) + -s (複數)",
+"youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+directors"
+},
+{
+"english": "experts",
+"chinese": "專家 (n.)",
+"sentence": "Our company has hired a team of IT experts to upgrade the cybersecurity system.",
+"synonyms": "specialists (專家), professionals (專業人士), authorities (權威), masters (大師)",
+"antonyms": "beginners (初學者), amateurs (業餘愛好者), novices (新手)",
+"confused": "exports (出口), excerpts (摘錄)",
+"roots": "ex- (向外) + periri (嘗試) + -s (複數)",
+"youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+experts"
+},
+{
+"english": "shareholders",
+"chinese": "股東 (n.)",
+"sentence": "The CEO assured the shareholders that the quarterly profit would exceed expectations.",
+"synonyms": "stockholders (股東), investors (投資者), stakeholders (利益相關者)",
+"antonyms": "無",
+"confused": "stakeholders (利益相關者)",
+"roots": "share (份額) + hold (持有) + -er (人) + -s (複數)",
+"youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+shareholders"
+},
+{
+"english": "targets",
+"chinese": "目標；對象 (n.) / 把...作為目標 (v.)",
+"sentence": "The new marketing campaign primarily targets young professionals in urban areas.",
+"synonyms": "goals (目標), objectives (目的), aims (目標), destinations (目的地)",
+"antonyms": "無",
+"confused": "tickets (票券), markets (市場)",
+"roots": "targe (盾牌) + -et (小詞綴) + -s (複數)",
+"youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+targets"
+},
+{
+"english": "prioritizes",
+"chinese": "優先考慮；給予...優先權 (v.)",
+"sentence": "The management prioritizes employee well-being by offering flexible working hours.",
+"synonyms": "prefers (偏好), favors (偏袒), highlights (強調)",
+"antonyms": "neglects (忽略), ignores (忽視), disregards (漠視)",
+"confused": "privatizes (私有化)",
+"roots": "prior (在前的) + -ity (名詞字尾) + -ize (動詞字尾) + -s (單數第三人稱)",
+"youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+prioritizes"
+},
+{
+"english": "clients",
+"chinese": "客戶；委託人 (n.)",
+"sentence": "We need to maintain excellent relationships with our long-term clients to ensure business growth.",
+"synonyms": "customers (顧客), patrons (主顧), buyers (買家), consumers (消費者)",
+"antonyms": "sellers (賣家), merchants (商人), vendors (供應商)",
+"confused": "clinics (診所), climates (氣候)",
+"roots": "cliens (追隨者/委託人) + -s (複數)",
+"youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+clients"
+},
+{
+"english": "designer",
+"chinese": "設計師 (n.)",
+"sentence": "The lead designer presented a revised prototype to the development team yesterday.",
+"synonyms": "creator (創作者), architect (建築師/締造者), inventor (發明家)",
+"antonyms": "無",
+"confused": "design (設計), designate (指定)",
+"roots": "de- (向下/強調) + signare (標記) + -er (人)",
+"youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+designer"
+},
+{
+"english": "drew",
+"chinese": "畫；吸引；提取 (v. 過去式)",
+"sentence": "The promotional event drew a large crowd of potential customers to the new store.",
+"synonyms": "attracted (吸引), pulled (拉), sketched (描繪), drafted (起草)",
+"antonyms": "repelled (排斥), pushed (推)",
+"confused": "draw (畫 - 現在式), drown (淹水/溺死)",
+"roots": "無",
+"youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+drew"
+},
+{
+"english": "interface",
+"chinese": "介面；交界面 (n.)",
+"sentence": "The software's user interface is highly intuitive, making it easy for beginners to navigate.",
+"synonyms": "connection (連接), boundary (邊界), interaction (互動)",
+"antonyms": "無",
+"confused": "interfere (干涉)",
+"roots": "inter- (在...之間) + face (表面)",
+"youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+interface"
+},
+{
+"english": "cooperate",
+"chinese": "合作；協作 (v.)",
+"sentence": "The two departments must cooperate closely to complete the project before the deadline.",
+"synonyms": "collaborate (協作), assist (協助), coordinate (協調), contribute (貢獻)",
+"antonyms": "compete (競爭), oppose (反對), hinder (阻礙)",
+"confused": "operate (操作), corporate (企業的)",
+"roots": "co- (共同) + operate (操作/運作)",
+"youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+cooperate"
+},
+{
+"english": "corroborate",
+"chinese": "證實；確證 (v.)",
+"sentence": "The financial audit will corroborate the figures presented in the annual report.",
+"synonyms": "confirm (確認), verify (核實), validate (驗證), support (支持)",
+"antonyms": "contradict (反駁), deny (否認), refute (駁斥)",
+"confused": "collaborate (合作), corporate (企業的)",
+"roots": "cor- (共同/加強) + roborare (使堅固)",
+"youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+corroborate"
+},
+{
+"english": "demographic",
+"chinese": "人口統計的；人口群體 (adj./n.)",
+"sentence": "The survey results show a shift in our primary demographic toward younger consumers.",
+"synonyms": "population (人口), segment (部分/客群), group (群體)",
+"antonyms": "無",
+"confused": "democratic (民主的), epidemic (傳染病)",
+"roots": "demo- (人民) + graph (寫/記錄) + -ic (形容詞字尾)",
+"youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+demographic"
+},
+{
+"english": "secured",
+"chinese": "獲得；確保；保護 (v. 過去式/過去分詞)",
+"sentence": "The sales team successfully secured a multi-million dollar contract with the overseas client.",
+"synonyms": "obtained (獲得), acquired (取得), protected (保護), ensured (確保)",
+"antonyms": "lost (失去), forfeited (喪失), endangered (危及)",
+"confused": "secret (秘密)",
+"roots": "se- (分開/免除) + cura (擔憂/照顧) + -ed (過去式/過去分詞)",
+"youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+secured"
+},
+{
+"english": "several",
+"chinese": "幾個的；數個的 (adj.)",
+"sentence": "The manager highlighted several key areas for improvement during the performance review.",
+"synonyms": "various (各種的), multiple (多個的), numerous (許多的), some (一些)",
+"antonyms": "none (沒有), single (單一的), one (一個)",
+"confused": "severe (嚴重的), sever (切斷)",
+"roots": "源自 separare (分開)",
+"youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+several"
+},
+{
+"english": "contracts",
+"chinese": "合約；契約 (n.) / 簽訂合約；收縮 (v.)",
+"sentence": "Both parties must sign the contracts before the construction work can begin.",
+"synonyms": "agreements (協議), deals (交易), treaties (條約), settlements (協議)",
+"antonyms": "disagreements (分歧)",
+"confused": "contacts (聯絡人), contrasts (對比)",
+"roots": "con- (共同) + trahere (拉/拖) + -s (複數)",
+"youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+contracts"
+},
+{
+"english": "encouraging",
+"chinese": "令人鼓舞的；鼓勵的 (adj. / v. 現在分詞)",
+"sentence": "The recent increase in online sales is an encouraging sign for the company's future.",
+"synonyms": "inspiring (激勵的), promising (有希望的), uplifting (令人振奮的), motivating (激發的)",
+"antonyms": "discouraging (令人沮喪的), depressing (令人憂沉的), disheartening (令人灰心的)",
+"confused": "courageous (勇敢的)",
+"roots": "en- (使成為) + courage (勇氣) + -ing (現在分詞/形容詞字尾)",
+"youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+encouraging"
+},
+{
+"english": "compromising",
+"chinese": "妥協的；有損聲譽的 (adj. / v. 現在分詞)",
+"sentence": "We must find a solution without compromising the quality of our customer service.",
+"synonyms": "conceding (讓步的), yielding (屈服的), negotiating (談判的)",
+"antonyms": "unyielding (不屈的), uncompromising (不妥協的), firm (堅定的)",
+"confused": "comprising (包含), promising (有前途的)",
+"roots": "com- (共同) + promise (承諾) + -ing (現在分詞/形容詞字尾)",
+"youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+compromising"
+}
+]
+,[
+{
 "english": "strategies",
 "chinese": "策略；戰略 (名詞)",
 "sentence": "The marketing team met to discuss new strategies for entering the Asian market.",
